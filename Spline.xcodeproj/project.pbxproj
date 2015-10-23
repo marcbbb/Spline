@@ -12,10 +12,9 @@
 		0C3BDCA11BD8EFB6007F8CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3BDC9F1BD8EFB6007F8CB0 /* Main.storyboard */; };
 		0C3BDCA31BD8EFB6007F8CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C3BDCA21BD8EFB6007F8CB0 /* Assets.xcassets */; };
 		0C3BDCA61BD8EFB6007F8CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3BDCA41BD8EFB6007F8CB0 /* LaunchScreen.storyboard */; };
-		0C3BDCAE1BD8F2EB007F8CB0 /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3BDCAD1BD8F2EB007F8CB0 /* PointView.swift */; settings = {ASSET_TAGS = (); }; };
-		0C3BDCB01BD8F2FA007F8CB0 /* SplineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3BDCAF1BD8F2F9007F8CB0 /* SplineView.swift */; settings = {ASSET_TAGS = (); }; };
-		0C3BDCB21BD8F307007F8CB0 /* CGExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3BDCB11BD8F307007F8CB0 /* CGExtension.swift */; settings = {ASSET_TAGS = (); }; };
-		0C3BDCB41BD8F355007F8CB0 /* BezierExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3BDCB31BD8F355007F8CB0 /* BezierExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		0C3BDCBA1BD8F40C007F8CB0 /* BezierExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3BDCB61BD8F40C007F8CB0 /* BezierExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		0C3BDCBC1BD8F40C007F8CB0 /* PointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3BDCB81BD8F40C007F8CB0 /* PointView.swift */; settings = {ASSET_TAGS = (); }; };
+		0C3BDCBD1BD8F40C007F8CB0 /* SplineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3BDCB91BD8F40C007F8CB0 /* SplineView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +25,9 @@
 		0C3BDCA21BD8EFB6007F8CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C3BDCA51BD8EFB6007F8CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C3BDCA71BD8EFB6007F8CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C3BDCAD1BD8F2EB007F8CB0 /* PointView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointView.swift; path = ../PointView.swift; sourceTree = "<group>"; };
-		0C3BDCAF1BD8F2F9007F8CB0 /* SplineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplineView.swift; sourceTree = "<group>"; };
-		0C3BDCB11BD8F307007F8CB0 /* CGExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGExtension.swift; sourceTree = "<group>"; };
-		0C3BDCB31BD8F355007F8CB0 /* BezierExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierExtension.swift; sourceTree = "<group>"; };
+		0C3BDCB61BD8F40C007F8CB0 /* BezierExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierExtension.swift; sourceTree = "<group>"; };
+		0C3BDCB81BD8F40C007F8CB0 /* PointView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointView.swift; sourceTree = "<group>"; };
+		0C3BDCB91BD8F40C007F8CB0 /* SplineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +60,7 @@
 		0C3BDC9A1BD8EFB6007F8CB0 /* Spline */ = {
 			isa = PBXGroup;
 			children = (
-				0C3BDCAF1BD8F2F9007F8CB0 /* SplineView.swift */,
-				0C3BDCB11BD8F307007F8CB0 /* CGExtension.swift */,
-				0C3BDCAD1BD8F2EB007F8CB0 /* PointView.swift */,
-				0C3BDCB31BD8F355007F8CB0 /* BezierExtension.swift */,
+				0C3BDCB51BD8F40C007F8CB0 /* Classes */,
 				0C3BDC9B1BD8EFB6007F8CB0 /* AppDelegate.swift */,
 				0C3BDC9D1BD8EFB6007F8CB0 /* ViewController.swift */,
 				0C3BDC9F1BD8EFB6007F8CB0 /* Main.storyboard */,
@@ -74,6 +69,16 @@
 				0C3BDCA71BD8EFB6007F8CB0 /* Info.plist */,
 			);
 			path = Spline;
+			sourceTree = "<group>";
+		};
+		0C3BDCB51BD8F40C007F8CB0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0C3BDCB61BD8F40C007F8CB0 /* BezierExtension.swift */,
+				0C3BDCB81BD8F40C007F8CB0 /* PointView.swift */,
+				0C3BDCB91BD8F40C007F8CB0 /* SplineView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,12 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C3BDCAE1BD8F2EB007F8CB0 /* PointView.swift in Sources */,
-				0C3BDCB01BD8F2FA007F8CB0 /* SplineView.swift in Sources */,
-				0C3BDCB41BD8F355007F8CB0 /* BezierExtension.swift in Sources */,
+				0C3BDCBC1BD8F40C007F8CB0 /* PointView.swift in Sources */,
+				0C3BDCBD1BD8F40C007F8CB0 /* SplineView.swift in Sources */,
 				0C3BDC9E1BD8EFB6007F8CB0 /* ViewController.swift in Sources */,
 				0C3BDC9C1BD8EFB6007F8CB0 /* AppDelegate.swift in Sources */,
-				0C3BDCB21BD8F307007F8CB0 /* CGExtension.swift in Sources */,
+				0C3BDCBA1BD8F40C007F8CB0 /* BezierExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +305,7 @@
 				0C3BDCAC1BD8EFB6007F8CB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

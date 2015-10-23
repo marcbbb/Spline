@@ -8,18 +8,62 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+  
+  let curve = UIBezierPath()
+  let shapeLayer = CAShapeLayer()
+  var pointViewArray = [PointView]()
+  var spline : SplineView!
+
+  @IBOutlet var splineIB : SplineView!
+  @IBOutlet var help : UILabel!
+  @IBOutlet var slider : UISlider!
+  @IBOutlet var viewProgrammatically : UIView!
+  @IBOutlet var viewIB : UIView!
+  
+  @IBAction func didChange(sender : UISegmentedControl ){
+    if sender.selectedSegmentIndex == 0{
+      splineIB.interpolationType = .CatMull
+      spline.interpolationType = .CatMull
+    }else{
+      splineIB.interpolationType = .Hermite
+      spline.interpolationType = .Hermite
+    }
+    
+  }
+  
+  @IBAction func didChangeType(sender : UISegmentedControl ){
+    if sender.selectedSegmentIndex == 1{
+      viewProgrammatically.hidden = false
+      viewIB.hidden = true
+    }else{
+      viewProgrammatically.hidden = true
+      viewIB.hidden = false
+    }
+  
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    help.text = "Drag red control points to edit \n Tap on control point to remove \n Tap any where to add a new point "
+    
+    var points = [CGPoint]()
+    
+    for i in 0 ..< 4 {
+      points.append(CGPoint(x: i * 60 + 30 + random()%100, y: 60 * i + 300))
+    }
+    
+    spline = SplineView(points: points, frame: self.viewProgrammatically.bounds)
+    
+    self.viewProgrammatically.addSubview(spline)
+
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  
+  @IBAction func sliderValueChanged(slider: UISlider) {
+    
+    splineIB.contractionFactor = CGFloat( slider.value)
+    spline.contractionFactor = CGFloat( slider.value)
   }
-
-
 }
-
